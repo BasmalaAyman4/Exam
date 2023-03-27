@@ -129,15 +129,7 @@
     font-size: 25px;
 }
 
-.modalWidth {
-    width: 90%;
-}
 
-.modal-content {
-    margin-left: -100%;
-    width: 240% !important;
-
-}
 
 .table {
     margin-top: 20px;
@@ -153,8 +145,8 @@
     color: #c82333;
 }
 
+
 .modalWidth {
-    margin-left: 20%;
     scrollbar-width: thin;
     scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
@@ -204,16 +196,9 @@
             margin-left: 80%;
             margin-bottom: 5px;
             margin-top: -50px;
-        }
+        }                        
+                                                 
 }
-
-
-
-
-
-
-
-
 @media (min-width:668px) and (max-width:767px) {
     .exam{
         display: flex;
@@ -265,4 +250,16 @@
         margin-bottom: 5px;
         margin-top: -50px;
     }
+}
+@media (min-width:1500px) {
+    .modalWidth {
+            width: 100%;
+        }
+    
+        .modal-content {
+            margin-left: -50%;
+            width: 1000px !important;
+    
+        }
+    
 }

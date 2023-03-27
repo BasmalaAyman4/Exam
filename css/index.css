@@ -192,10 +192,7 @@
         .test__info-heading,
         .ans__title{
             margin-bottom: 10px;
-            font-size: 30px;
-        }
-        .test__info-heading{
-             font-size: 25px;
+            font-size: 20px;
         }
         .form-check{
             margin: 5px;

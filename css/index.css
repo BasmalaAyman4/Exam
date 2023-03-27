@@ -173,3 +173,57 @@
     border-radius: 6px;
     border: 1px solid var(--thumbBG);
 }
+@media (max-width:767px) {
+    .exam{
+        display: flex;
+        flex-direction: column;
+    }
+    .exam-btn{
+        margin: 5px;
+    }
+        .queAndAns{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+        }
+        .que__body{
+            font-size: 11px;
+        }
+        .test__info-heading,
+        .ans__title{
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+        .test__info-heading{
+             font-size: 25px;
+        }
+        .form-check{
+            margin: 5px;
+        }
+        .flag i{
+            margin-left:80%;
+            margin-bottom: 5px;
+            margin-top: -50px;
+        }
+}
+@media (min-width:768px) and (max-width:1410px) {
+    .exam {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .exam-btn {
+        margin: 5px;
+    }
+
+    .queAndAns {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .flag i {
+        margin-left: 80%;
+        margin-bottom: 5px;
+        margin-top: -50px;
+    }
+}

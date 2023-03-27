@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,100;1,300&family=Roboto+Slab:wght@200;300;400&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <nav class="web">
+        <div class="container">
+            <h3 class="web__logo">INVO<span>ACADEMY</span></h3>
+            <div class="web__list">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Nav
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade modalWidth" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content ">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Question Navigation</h5>
+
+                                <button type="button" class="closee"><i class="fa-solid fa-circle-xmark"
+                                        data-bs-dismiss="modal" aria-label="Close"></i></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="btn-filter">
+                                    <button type="button" class="btn btn-outline-danger active" id="all"
+                                        onclick="removeItem('all')">All</button>
+                                    <button type="button" class="btn btn-outline-danger" id="ans"
+                                        onclick="removeItem('ans')">Answered</button>
+                                    <button type="button" class="btn btn-outline-danger" id="nans"
+                                        onclick="removeItem('nans')">Not Answered</button>
+                                    <button type="button" class="btn btn-outline-danger" id="flag"
+                                        onclick="removeItem('flag')">Flagged</button>
+                                    <button type="button" class="btn btn-outline-danger" id="nflag"
+                                        onclick="removeItem('nflag')">Not Flagged</button>
+                                </div>
+                                <table class="table">
+                                    <thead class="tabhead">
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">State</th>
+                                            <th scope="col">Flagged</th>
+                                            <th scope="col">Your Answer Number</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-danger " id="prev-button" disabled
+                    onclick="prev()">Prev</button>
+                <button type="button" class="btn btn-outline-danger" id="next-button" onclick="next()">Next</button>
+            </div>
+            <div class="submit">
+                <button type="button" class="btn btn-outline-danger">Submit Your Answer</button>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section class="category">
+        <h3>Category : <span>SAT</span></h3>
+        <h5 class="time">Remaining Time <span id="countdown"></span>
+        </h5>
+    </section>
+
+    <section class="allCard"></section>
+
+    <section class="paginations"></section>
+    <div class="flag" onclick="pageFlag()"><i class="fa-solid fa-flag"></i></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
